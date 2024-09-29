@@ -21,7 +21,7 @@ class TurtleBot3Controller(Node):
         self.move_turtlebot()
 
     def move_turtlebot(self):
-# Creating a velocity message 
+#velocity message is created
         velocity_msg = Twist()
         velocity_msg.linear.x = self.velocity_value
         velocity_msg.angular.z = 0.0  # No rotation
